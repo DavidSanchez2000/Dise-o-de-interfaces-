@@ -61,4 +61,8 @@ function buildPaella(){
 	///Decorator
 	var Decorator = new executeDecorator(menuItems);
 	console.log(Decorator);
+	//singleton
+	var Singleton = new executeSingleton();
+	console.log(Singleton);
+
 }

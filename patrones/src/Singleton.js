@@ -15,16 +15,19 @@ var singleton = (function (){
 
 	function createSalad(){
 
-		var saladIngredients = [];
+		var saladIngredients = ["lechuga","tomate","pina","jamon","crema de leche","mango"];
+
 		return new productOnly();
 	}
 
 	function instanceSingle(){
 		instance = createSalad();
+
+		return instance;
 	}
 
-	return instance;
-})();
+	
+})() ;
 
 function executeSingleton(){
 

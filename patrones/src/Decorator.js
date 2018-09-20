@@ -18,7 +18,7 @@ function executeDecorator(item) {
 
 	for(var i = 0;i < item.length;i++){
 		var productName = new product(item[i])
-		var decorated = new decoratorNameProduct(productName,"La mejor paella de la jave XD");
+		var decorated = new decoratorNameProduct(productName,"La mejor paella de la universidad");
 		itemDecorate.push(decorated);
 	}
 

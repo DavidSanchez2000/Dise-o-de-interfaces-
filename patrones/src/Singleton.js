@@ -4,12 +4,14 @@ de paella generados*/
 
 var singleton = (function (){
 
+	var instance;
+
 	function productOnly(ingredients){
 
 		var objectSalad = {
-			salad: this.ingredients,/// salad es una llave, funciona como una estructura de dato diccionario
+			salad: ingredients,/// salad es una llave, funciona como una estructura de dato diccionario
 		}
-		//return objectSalad;
+		return objectSalad;
 
 	}
 
@@ -17,7 +19,7 @@ var singleton = (function (){
 
 		var saladIngredients = ["lechuga","tomate","pina","jamon","crema de leche","mango"];
 
-		return new productOnly();
+		return new productOnly(saladIngredients);
 	}
 
 	function instanceSingle(){
@@ -25,11 +27,11 @@ var singleton = (function (){
 
 		return instance;
 	}
-
+	return instanceSingle();
 	
-})() ;
+})();
 
 function executeSingleton(){
-
-	return singleton;
+	var saladGenerate = singleton;
+	return saladGenerate;
 }
